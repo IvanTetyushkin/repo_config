@@ -1,16 +1,9 @@
-" based on http://github.com/jferris/config_files/blob/master/vimrc
+let $vimdir="~/repo_config/config.vim"
+source $vimdir/plugin.vim
+source $vimdir/autocomplete.vim
+source $vimdir/editing.vim
+source $vimdir/common.vim
 
-" Use Vim settings, rather then Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-source ~/.vim/plugin.vim
-source ~/.vim/autocomplete.vim
-source ~/.vim/editing.vim
-source ~/.vim/common.vim
-
-
-if filereadable(".vimrc.local")
-  source .vimrc.local
-endif
 
 nnoremap <leader><space> :nohlsearch<CR
 

@@ -1,0 +1,5 @@
+source ~/repo_config/config.vim/init.vim
+if filereadable(".vimrc.local")
+  source .vimrc.local
+endif
+

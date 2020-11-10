@@ -10,5 +10,3 @@ set smartindent
 
 set shiftround
 set textwidth=80
-
-set 
