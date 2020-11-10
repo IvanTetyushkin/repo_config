@@ -6,6 +6,8 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../.."
 
+#git aliases
+alias gst="git status"
 
 colorflag="--color=auto"
 # List all files colorized in long format

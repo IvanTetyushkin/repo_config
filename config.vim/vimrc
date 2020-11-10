@@ -1,5 +1,5 @@
 source ~/repo_config/config.vim/init.vim
-if filereadable(".vimrc.local")
-  source .vimrc.local
+if filereadable("~/.config/vimrc_local.local")
+  source ~/.config/vimrc_local.vim
 endif
 
