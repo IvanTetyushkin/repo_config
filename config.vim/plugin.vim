@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'prabirshrestha/async.vim'
   Plug 'prabirshrestha/vim-lsp'
   Plug 'ajh17/vimcompletesme'
+  Plug 'shime/vim-livedown'
 call plug#end()
 
 if has("wildmenu")
