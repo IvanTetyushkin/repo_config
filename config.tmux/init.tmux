@@ -17,4 +17,3 @@ set-window-option -g window-status-current-fg black
 # Cycle panes.
 bind b select-pane -t :.+
 bind C-b select-pane -t :.+
-

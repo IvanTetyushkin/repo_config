@@ -8,6 +8,9 @@ alias .....="cd ../../.."
 
 #git aliases
 alias gst="git status"
+alias gdiff="git diff"
+
+
 
 colorflag="--color=auto"
 # List all files colorized in long format
@@ -37,3 +40,5 @@ alias :q="exit"
 alias tmuxn="tmux new -s" # after need name
 alias tmuxlist="tmux list-sessions"
 alias tmuxattach=" tmux attach-session -t" # need number from tmuxlist
+#other
+alias :w="which"
