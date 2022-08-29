@@ -1,0 +1,12 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+#shopt -s direxpand
+shopt -s cdable_vars
+PS1='[\u@\h \W]\$ '
+source ~/repo_config/config.bash/init.bash
