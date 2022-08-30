@@ -59,3 +59,18 @@ set-window-option -g window-status-bell-style "bold"
 # Cycle panes.
 bind b select-pane -t :.+
 bind C-b select-pane -t :.+
+
+# Send To Tmux Clipboard or System Clipboard
+bind-key < run-shell "tmux set-buffer -- \"$(xsel -o -b)\"" \; display-message "Copy To Tmux Clipboard"
+bind-key > run-shell 'tmux show-buffer | xsel -i -b' \; display-message "Copy To System Clipboard"
+
+# some stuff to copy to system buffer
+bind-key -T copy-mode-vi v send-keys -X begin-selection;
+bind-key -T copy-mode-vi V send-keys -X select-line;
+bind-key -T copy-mode-vi C-v send-keys -X rectangle-toggle;
+bind-key -T choice-mode-vi h send-keys -X tree-collapse ;
+bind-key -T choice-mode-vi l send-keys -X tree-expand ;
+bind-key -T choice-mode-vi H send-keys -X tree-collapse-all ;
+bind-key -T choice-mode-vi L send-keys -X tree-expand-all ;
+bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe "xclip -in -selection clipboard";
+bind-key -T copy-mode-vi y send-keys -X copy-pipe "xclip -in -selection clipboard"
